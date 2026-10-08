@@ -11,8 +11,8 @@ is hidden, text cells become prose, math cells become KaTeX LaTeX.
 
 - **Live site**: https://shocklab.github.io/mam1043h-course/
 - **Repo**: `shocklab/mam1043h-course`
-- **Notebooks**: `/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H/` (40 .nb files)
-- **Site root**: `/Users/jonathanshock/Cursor folders/MAM1043H-site/`
+- **Notebooks**: `/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H/` (40 .nb files)
+- **Site root**: `/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/`
 - **Stats**: 40/40 notebooks parsing cleanly, ~240 PNGs, **16 animation GIFs**
   across 11 notebooks, 45 Hugo pages building clean.
 
@@ -159,7 +159,7 @@ Because `build_all.sh` overwrites all `content/*.md`, a parse → GIF-wire
 cycle looks like:
 
 ```bash
-cd "/Users/jonathanshock/Cursor folders/MAM1043H-site"
+cd "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site"
 
 # 1. Re-parse all 40 notebooks (PATH needed for Python 3.10+).
 PATH="/opt/homebrew/bin:$PATH" bash scripts/build_all.sh
@@ -186,10 +186,10 @@ PATH="/opt/homebrew/bin:$PATH" bash scripts/build_all.sh
 /opt/homebrew/bin/hugo server --port 1313
 
 # 5. Commit + push — GitHub Actions deploys automatically.
-git -C "/Users/jonathanshock/Cursor folders/MAM1043H-site" add -u
-git -C "/Users/jonathanshock/Cursor folders/MAM1043H-site" add static/images
-git -C "/Users/jonathanshock/Cursor folders/MAM1043H-site" commit -m "…"
-git -C "/Users/jonathanshock/Cursor folders/MAM1043H-site" push
+git -C "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site" add -u
+git -C "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site" add static/images
+git -C "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site" commit -m "…"
+git -C "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site" push
 ```
 
 ## Known Issues & Gotchas
@@ -252,8 +252,8 @@ threshold fixes. `v9` is the single source of truth.
 - WolframScript: `/usr/local/bin/wolframscript` (v1.10.0) — **license active**
 - Python 3.12: `/opt/homebrew/bin/python3`
 - gifsicle: `/opt/homebrew/bin/gifsicle` (for adjusting GIF timing post-render)
-- Notebooks: `/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H/`
-- Site: `/Users/jonathanshock/Cursor folders/MAM1043H-site/`
+- Notebooks: `/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H/`
+- Site: `/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/`
 - GitHub repo: `shocklab/mam1043h-course`
 
 ## Useful one-liners
@@ -261,14 +261,14 @@ threshold fixes. `v9` is the single source of truth.
 ```bash
 # Re-parse a single notebook.
 PATH="/opt/homebrew/bin:$PATH" python3 scripts/parse_nb.py \
-  "/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H/MAM1043part1a.nb" \
+  "/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H/MAM1043part1a.nb" \
   content/sec1-1-overview.md --images-dir "/images/part1a" \
   --weight 11 --title "1.1 Overview of the Course"
 
 # Export static graphics from one notebook.
 wolframscript -file scripts/export_all_graphics.wl \
-  "/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H/MAM1043part3a.nb" \
-  "/Users/jonathanshock/Cursor folders/MAM1043H-site/static/images/part3a"
+  "/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H/MAM1043part3a.nb" \
+  "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/static/images/part3a"
 
 # Re-extract all animations.
 wolframscript -file scripts/export_animations_v9.wl

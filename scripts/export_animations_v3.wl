@@ -2,8 +2,8 @@
    and Animate to capture the list of frames; export each as GIF.
 *)
 
-nbDir = "/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H";
-outBase = "/Users/jonathanshock/Cursor folders/MAM1043H-site/static/images";
+nbDir = "/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H";
+outBase = "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/static/images";
 dur = 0.12;
 res = 100;
 

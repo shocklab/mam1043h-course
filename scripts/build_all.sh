@@ -4,13 +4,13 @@
 # Usage:
 #   ./scripts/build_all.sh [notebooks-dir]
 #
-# Default notebooks dir: /Users/jonathanshock/Cursor folders/MAM2046/MAM1043H
+# Default notebooks dir: /Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H
 
 set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-NB_DIR="${1:-/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H}"
+NB_DIR="${1:-/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H}"
 
 PARSER="$SCRIPT_DIR/parse_nb.py"
 

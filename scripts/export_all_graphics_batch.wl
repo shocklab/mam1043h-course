@@ -4,8 +4,8 @@
    Usage: wolframscript -file export_all_graphics_batch.wl
 *)
 
-nbDir = "/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H";
-outBase = "/Users/jonathanshock/Cursor folders/MAM1043H-site/static/images";
+nbDir = "/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H";
+outBase = "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/static/images";
 
 (* notebook basename -> image subdirectory *)
 jobs = {

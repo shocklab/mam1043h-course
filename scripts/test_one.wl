@@ -16,7 +16,7 @@ System`ListAnimate[arg_, ___] := (
   captureFrames[arg]; Null);
 
 UsingFrontEnd[
-  nb = NotebookOpen["/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H/MAM1043part1b.nb", Visible -> False];
+  nb = NotebookOpen["/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H/MAM1043part1b.nb", Visible -> False];
   inputCells = Cells[nb, CellStyle -> "Input"];
   Print["cells: ", Length[inputCells]];
   Do[

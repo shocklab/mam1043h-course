@@ -5,8 +5,8 @@
    extract the Table body and iterator, reconstruct with finer step.
 *)
 
-nbDir = "/Users/jonathanshock/Cursor folders/MAM2046";
-outBase = "/Users/jonathanshock/Cursor folders/MAM2046-site/static/images";
+nbDir = "/Users/jonathanshock/Cursor folders/Teaching/MAM2046";
+outBase = "/Users/jonathanshock/Cursor folders/Teaching/MAM2046-site/static/images";
 dur = 0.12;
 res = 120;
 multiplier = 4;

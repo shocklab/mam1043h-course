@@ -9,8 +9,8 @@
    - Per-cell timeout via TimeConstrained so one bad cell can't hang the whole run
 *)
 
-nbDir = "/Users/jonathanshock/Cursor folders/MAM2046/MAM1043H";
-outBase = "/Users/jonathanshock/Cursor folders/MAM1043H-site/static/images";
+nbDir = "/Users/jonathanshock/Cursor folders/Teaching/MAM2046/MAM1043H";
+outBase = "/Users/jonathanshock/Cursor folders/Teaching/MAM1043H-site/static/images";
 dur = 0.12;
 res = 100;
 cellTimeout = 30;  (* seconds per cell *)
